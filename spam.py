@@ -8,11 +8,11 @@ print ('Input 1x Spam = 5SMS')
 jm = int(input('Jumlah Spam :'))
 
 for i in range(jm):
-      req=requests.get("https://ainxbot-sms.herokuapp.com/api/spamsms",params={"phone":nomor}).text
+      req=requests.get("https://amfcode.my.id/api/spamsms",params={"phone":nomor}).text
       if "mengirim" in req:
             print ('Mengirim spam...')
       else:
-            print ('Mencoba Mengirim spam...')
+            print ('Spam Berhasil!')
 
 
 
